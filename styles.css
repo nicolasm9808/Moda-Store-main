@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(Fuentes/cinzel/Cinzel-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url(Fuentes/cinzel/Cinzel-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel-Decorative';
+    src: url(Fuentes/cinzel/CinzelDecorative-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cinzel-Decorative';
+    src: url(Fuentes/cinzel/CinzelDecorative-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Cinzel';
+    display: flex;
+    padding: 0;
+    margin: 0;
+    color:#67595E;
+}
+
+a{
+    color: #67595E;
+    font-family: 'Cinzel-Decorative';
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenedor-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 35vw;
+}
+
+.contenedor-menu{
+    height: 100vh;
+    width: 38vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr 2fr;
+    overflow:unset;
+    min-width: 96px;
+    position: relative;
+}
+
+.seccion-menu{
+    display: flex;
+    align-items: center;
+}
+
+section b{
+    font-size: 110%;
+}
+
+.icono{
+    width: 30%;
+    margin: 5%;
+    max-width: 60px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #67595e81;
+    width: 58vw;
+    border-color: #67595E;
+    border-radius: 30px;
+    border-style: solid;
+    margin: 2vw;
+    padding: 2vw;
+}
+
+h1{
+    font-size: 6vw;
+    margin: 0;
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-productos-carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 60%;
+    align-items: center;
+}
+
+.producto-carrito{
+    padding: 2%;
+    display: flex;
+    font-size: 60%;
+    align-items: center;
+}
+
+.imagen-producto{
+    width: 8vw;
+    height: auto;
+    border-color: #67595E;
+    border-radius: 30px;
+    border-style: solid;
+}
+
+.informacion-producto{
+    text-align: center;
+    padding-top: 5%;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-producto {
+        width: 30vw;
+    }
+
+    .producto {
+        padding: 5%;
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen-producto {
+        width: 58vw;
+    }
+
+    .producto {
+        padding: 10%;
+        font-size: 100%;
+    }
+
+    .seccion-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Estilo base del botón */
+.boton-carrito {
+    padding: 10px 20px;
+    background-color: #946a79; /* Color de fondo inicial */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo cuando se hace hover */
+.boton:hover {
+    background-color: #946a79; /* Color de fondo al hacer hover */
+    transform: scale(1.1); /* Aumenta un 10% el tamaño del botón */
+}
+
+/* Estilo para botón secundario */
+.boton-secundario {
+    background-color: #6c757d;
+}
+
+/* Estilo para botón secundario al hacer hover */
+.boton-secundario:hover {
+    background-color: #5a6268;
+}
